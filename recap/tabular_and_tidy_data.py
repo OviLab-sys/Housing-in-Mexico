@@ -128,3 +128,15 @@ for house in houses:
     rooms.append(house["rooms"])
 
 import pandas as pd
+
+data = {
+    "price_approx_usd": price_apro_usd,
+    "area_in_m2": surface_covered_m2,
+    "rooms": rooms
+}
+
+print(data)
+
+house_dataframe = pd.DataFrame(data)
+
+print(house_dataframe)
