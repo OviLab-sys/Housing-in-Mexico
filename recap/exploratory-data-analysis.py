@@ -34,3 +34,15 @@ fig.write_html("mexico_real_estate_map.html")
 df["state"].nunique() #gives the number of unique states
 df["state"].unique() #gives the unique states
 df["state"].value_counts() #gives the number of values per category 
+
+"""Numerical Data"""
+
+#for numerical data, we can use the describe() function to get a summary of the data
+# this will give us the count, mean, std, min, 25%, 50%, 75%, and max values of the numerical data
+#for our case, we have the price_usd and area_m2 columns
+df["price_usd", "area_m2"].describe()
+
+
+"""Generating Histograms"""
+#histograms are a great way to visualize the distribution of numerical data
+# ahistogram shows how frequent data values occur within a certain range
